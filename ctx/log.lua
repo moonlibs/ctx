@@ -1,5 +1,5 @@
 local log = require 'log'
-local obj = { destroy = function(self) log.info("object destroy: %s",self) end }
+local obj = require 'obj'
 local M = obj.class({}, 'ctx.log')
 
 for _,k in pairs({"error","warn","info","debug"}) do
