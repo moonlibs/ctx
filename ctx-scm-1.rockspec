@@ -15,8 +15,8 @@ dependencies = {
 build = {
     type = 'builtin',
     modules = {
-        ['ctx'] = 'ctx.lua',
-        ['ctx.log'] = 'ctx/log.lua',
+        ['ctx'] = 'ctx.lua';
+        ['ctx.log'] = 'ctx/log.lua';
     }
 }
 
