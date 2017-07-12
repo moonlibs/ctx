@@ -11,12 +11,14 @@ description = {
 }
 dependencies = {
     'lua >= 5.1'
+    'base58 >= 0';
 }
 build = {
     type = 'builtin',
     modules = {
         ['ctx'] = 'ctx.lua';
         ['ctx.log'] = 'ctx/log.lua';
+        ['urandom'] = 'urandom.lua';
     }
 }
 
