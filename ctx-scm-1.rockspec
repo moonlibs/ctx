@@ -11,7 +11,7 @@ description = {
 }
 dependencies = {
     'lua >= 5.1',
-    'base58 >= 0',
+    'lua-base58 >= 0',
     'obj >= 0'
 }
 build = {
