@@ -1,7 +1,7 @@
 package = 'ctx'
 version = 'scm-1'
 source  = {
-    url    = 'git://github.com/moonlibs/ctx.git',
+    url    = 'git+https://github.com/moonlibs/ctx.git',
     branch = 'master',
 }
 description = {
