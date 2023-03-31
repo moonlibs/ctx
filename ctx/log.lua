@@ -2,10 +2,10 @@ local log = require 'log'
 local obj = require 'obj'
 local M = obj.class({}, 'ctx.log')
 
-for _,k in pairs({"error","warn","info","debug"}) do
+for _,k in pairs({"error","warn","info","debug","verbose"}) do
 	if log[k] then
 		local fun = log[k]
-		if k == "warn" then
+		if k == "warn" or k == "verbose" then
 			M[ k ] = function(self, f, ...)
 				fun("[%s]> "..f,self.prefix, ...)
 			end
